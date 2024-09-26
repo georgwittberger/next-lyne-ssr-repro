@@ -4,11 +4,13 @@ const withLitSSR = createWithLitSSR({ addDeclarativeShadowDomPolyfill: true });
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: "export",
   transpilePackages: [
     "@sbb-esta/lyne-elements",
     "@sbb-esta/lyne-react",
     "@sbb-esta/lyne-design-tokens",
     "@lit-labs/nextjs",
+    "@lit-labs/observers",
     "@lit-labs/ssr",
     "@lit-labs/ssr-react",
     "@lit/react",
